@@ -11,20 +11,12 @@ namespace Session09
         static void Main(string[] args)
         {
 
-            string favColor = ShowMenu("What is your favorite Color? Use Page keys to move up and down and enter to select!\n", new string[]
-            {
-                "Red",
-                "Green",
-                "Blue"
-            });
-
-            Console.WriteLine($"\nYour Favorite color is {favColor}!");
 
 
             Console.ReadKey();
         }
 
-        public static string ShowMenu(string info, string[] options)
+        public static object ShowMenu(string info, object[] options)
         {
             Console.WriteLine(info);
 
@@ -66,7 +58,7 @@ namespace Session09
             return options[indexHighlight];
         }
 
-        public static void HighlightPageOption(string info, string[] options, int index)
+        public static void HighlightPageOption(string info, object[] options, int index)
         {
             //Clear the console so it doesn't print the new values on new lines, but instead replaces current values with new values on respective line
             Console.Clear();
