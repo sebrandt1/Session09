@@ -6,16 +6,8 @@ using System.Threading.Tasks;
 
 namespace Session09
 {
-    class Program
+    public class Menu
     {
-        static void Main(string[] args)
-        {
-
-
-
-            Console.ReadKey();
-        }
-
         public static object ShowMenu(string info, object[] options)
         {
             Console.WriteLine(info);
